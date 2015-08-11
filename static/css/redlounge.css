@@ -325,7 +325,7 @@ a.post-category:hover {
     margin-top: 20px;
     border: silver 1px dashed;
     font-size: 9pt;
-    width: 260px;
+    width: 200px;
     height: 55px;
 }
 
@@ -467,4 +467,8 @@ hr.thin {
 .share-lable {
     float: left;
     padding-left: 10px;
+}
+
+.social-sharing span {
+    margin-right: 10px;
 }
