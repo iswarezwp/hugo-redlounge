@@ -143,5 +143,6 @@ There are a few partials being used so that key areas can be easily overwritten.
  - ```listtop.html``` Placed at the top of the page for list.html
  - ```footer.html``` The footer
  - ```bodyend.html``` Right before ```</body>``` (within list.html, single.html, and index.html - be sure to include it when/if overwriting with your own index.html)
+
 # TODO:
 * ADD QQ and weibo css style
