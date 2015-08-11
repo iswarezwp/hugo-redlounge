@@ -55,10 +55,6 @@
 				</div>
 			{{ end }}
 
-			{{ if .Site.Params.socialsharing }}
-		    	{{ partial "socialsharing.html" . }}
-		    {{ end }}
-
 			{{ if .Site.Params.bannerinline }}
 				<img src="{{ .Site.Params.bannerinline }}" class="pure-img content-banner-image-inline" />
 			{{ end }}

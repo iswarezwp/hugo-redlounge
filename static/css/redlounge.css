@@ -42,7 +42,7 @@ p a {
 }
 h1 {
 	font-family: 'Libre Baskerville', serif;
-	font-weight: 700; 
+	font-weight: 700;
 }
 .center {
 	text-align: center;
@@ -329,30 +329,6 @@ a.post-category:hover {
 	background: #ccc;
 	color: #fff;
 	text-align: center;
-}
-.social-sharing a i {
-	width: 16px;
-}
-.social-sharing a i span {
-	display: none;
-}
-.social-sharing a.share-button-twitter:hover {
-	background: #00aced;
-}
-.social-sharing a.share-button-facebook:hover {
-	background: #3b5998;
-}
-.social-sharing a.share-button-linkedin:hover {
-	background: #007bb6;
-}
-.social-sharing a.share-button-google-plus:hover {
-	background: #dd4b39;
-}
-.social-sharing a.share-button-pinterest:hover {
-	background: #cb2027;
-}
-.social-sharing a.share-button-vk:hover {
-	background: #45668e;
 }
 
 /* Tags */
