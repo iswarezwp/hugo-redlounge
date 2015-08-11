@@ -35,7 +35,7 @@
 
   {{ partial "syntaxhighlight.html" . }}
 
-  {{ if .Params.lightbox }}
+  {{ if .Site.Params.lightbox }}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/lightbox.css">
   <script src="{{ .Site.BaseURL }}/js/lightbox.min.js"></script>

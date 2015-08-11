@@ -11,9 +11,9 @@
         {{ range .Data.Pages }}
           <section  class="post">
             <header class="post-header">
-            {{ if .Params.thumbnail }}
+            {{ if .Site.Params.thumbnail }}
             <div class="post-avatar-wrapper">
-              <img class="post-avatar" alt="" src="{{ .Params.thumbnail }}">
+              <img class="post-avatar" alt="" src="{{ .Site.Params.thumbnail }}">
             </div>
             {{ end }}
             <h1 class="post-title">
@@ -21,21 +21,21 @@
             </h1>
             </header>
             <p class="post-meta">
-            	{{ if not .Params.nodate }}
+            	{{ if not .Site.Params.nodate }}
 		          <span class="post-date">
 		            <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
 		          </span>
       				{{ end }}
-      				{{ if not .Params.noauthor }}
-      					{{ if .Params.author }}By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a>{{ end }}
+      				{{ if not .Site.Params.noauthor }}
+      					{{ if .Site.Params.author }}By <a class="post-author" {{ if .Site.Params.authorlink }}href="{{ .Site.Params.authorlink }}"{{ end }}>{{ .Site.Params.author }}</a>{{ end }}
       				{{ end }}
-              {{ if not .Params.noread }}
+              {{ if not .Site.Params.noread }}
                 <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em></span>
               {{ end }}
-      				{{ if .Params.categories }}
+      				{{ if .Site.Params.categories }}
       					<div class="post-categories">
 				        {{ $Site := .Site }}
-      					{{ range .Params.categories }}
+      					{{ range .Site.Params.categories }}
 					        <a class="post-category post-category-{{ . | urlize }}" href="{{ $Site.BaseURL}}/categories/{{ . | urlize }}">{{ . }}</a>
       					{{ end }}
       					</div>

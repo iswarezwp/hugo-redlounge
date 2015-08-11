@@ -6,5 +6,5 @@
 
 <meta name="description" content="{{ .Description }}">
 <meta name="keywords" content="{{ range .Keywords }}{{ . }},{{ end }}">
-<meta name="author" content="{{ .Params.author }}">
+<meta name="author" content="{{ .Site.Params.author }}">
 {{ .Hugo.Generator }}

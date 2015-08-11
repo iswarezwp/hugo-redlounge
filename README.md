@@ -1,7 +1,7 @@
 Red Lounge
 ===========
 
-This is an open-source Hugo theme designed by [@shift8creative](http://www.twitter.com/shift8creative) to be responsive and clean. It uses Pure.css and contains a few web fonts from Google as well as Font Awesome icons. 
+This is an open-source Hugo theme designed by [@shift8creative](http://www.twitter.com/shift8creative) to be responsive and clean. It uses Pure.css and contains a few web fonts from Google as well as Font Awesome icons.
 So despite it being simple, it has a lot of flexibility in terms of typography and design elements. It's also quite configurable as it has a few variables to change the
 appearance and features of the pages. By default, excess features (and JavaScript) is not included.
 
@@ -17,15 +17,15 @@ The sidebar can be configured with your main site config using params. For examp
 	sidebartagline = "Is super awesome"
 ```
 
-Neither the title nor tagline will be shown if not set. You will want to keep these lines short since there's limited space. 
+Neither the title nor tagline will be shown if not set. You will want to keep these lines short since there's limited space.
 Alternatively you could add custom HTML using the ```sidebarheader.html``` partial and keep those values empty strings.
 
 ### Menus
 
 There are a few menus this theme allows you to define (all optional) in your main config.
 
-Main - This menu is pretty basic and goes on the left panel under the site title and description. It contains red markers to separate items and call attention to the 
-fact that it is more important than the other lists/menus that you may have on your site. It is optional, but always shows a link to the home page.    
+Main - This menu is pretty basic and goes on the left panel under the site title and description. It contains red markers to separate items and call attention to the
+fact that it is more important than the other lists/menus that you may have on your site. It is optional, but always shows a link to the home page.
 This would be a good place to link to your various sections.
 
 ```
@@ -35,7 +35,7 @@ This would be a good place to link to your various sections.
 ```
 
 
-Social - This menu goes underneath the main menu and was originally designed to contain links out to social media accounts, RSS, etc. making use of Font Awesome.    
+Social - This menu goes underneath the main menu and was originally designed to contain links out to social media accounts, RSS, etc. making use of Font Awesome.
 However, you can use it for whatever you want. Just keep in mind space is limited here on the left panel.
 
 ```
@@ -45,7 +45,7 @@ However, you can use it for whatever you want. Just keep in mind space is limite
     identifier = "twitter"
 ```
 
-Footer - The footer menu might also contain links to social media accounts...It's up to you. It appears right above the copyright notice at the bottom of each page.    
+Footer - The footer menu might also contain links to social media accounts...It's up to you. It appears right above the copyright notice at the bottom of each page.
 This menu is simply plain text links centered and they are gray to match the footer. So there's less attention being drawn here. Perhaps good for notices, terms of service, etc.
 
 ```
@@ -58,11 +58,11 @@ This menu is simply plain text links centered and they are gray to match the foo
 
 Some assembly required here.
 
-```.Params.categories``` coming from front-matter are displayed as tags on list pages with boxes. By default they are all going to be gray with white text. The coloring is up to you.
+```.Site.Params.categories``` coming from front-matter are displayed as tags on list pages with boxes. By default they are all going to be gray with white text. The coloring is up to you.
 
 Each label will have the following class: ```class="post-category post-category-{{ . | urlize }}"```
 
-Note the name is going to be urlized. So for example: ```post-category-technology``` or ```post-category-golang``` and so on. This allows you to create your own CSS around the 
+Note the name is going to be urlized. So for example: ```post-category-technology``` or ```post-category-golang``` and so on. This allows you to create your own CSS around the
 categories you end up defining. You can then set the background color to be something specific and then all instances of that category label will match.
 
 You can easily include a categories CSS file, without modifying template partials, by using the site config params. Something like the following:
@@ -76,25 +76,25 @@ This will be included in the header.html file before headend.html partial, so yo
 
 ### Comments
 
-Comments use Disqus, so the main config needs to define ```disqusShortname``` like normal. However, each page can disable comments from appearing with front matter. Simply set 
+Comments use Disqus, so the main config needs to define ```disqusShortname``` like normal. However, each page can disable comments from appearing with front matter. Simply set
 ```nocomment = true``` and they will be hidden.
 
 ### Lightbox
 
-Lightbox is included with the theme but won't be available for use (not even linked in the HTML) unless you enable it. This way it stays out of the way and saves on bandwidth. 
-Should you decide you want to use it, simply add to your front-matter: ```lightbox = true``` and then in your markdown you'll need add links with a ```data-lightbox``` attribute. 
-Markdown wants to add titles when you add quotes so the syntax is a little weird. Alternatively, you can use HTML (which is likely easier in this case). So the following should 
+Lightbox is included with the theme but won't be available for use (not even linked in the HTML) unless you enable it. This way it stays out of the way and saves on bandwidth.
+Should you decide you want to use it, simply add to your front-matter: ```lightbox = true``` and then in your markdown you'll need add links with a ```data-lightbox``` attribute.
+Markdown wants to add titles when you add quotes so the syntax is a little weird. Alternatively, you can use HTML (which is likely easier in this case). So the following should
 use images in your ```static``` directory:
 
 ```
 <a href="/image.jpg" title="" data-lightbox="set1" data-title="This is my caption"><img src="/image-thumbnail.jpg" alt=""></a>
-``` 
+```
 
 Also note that Lightbox requires jQuery, so turning this on for a page or archetype will also link jQuery in the head section of your pages from Google's CDN.
 
 ### Hiding & Showing Things
 
-Comments can be hidden on a per page basis with ```nocomment = true``` but there's also some other things that can be hidden. Sometimes simply by not defining them, other times 
+Comments can be hidden on a per page basis with ```nocomment = true``` but there's also some other things that can be hidden. Sometimes simply by not defining them, other times
 by explicitly setting variables. They are as follows:
 
  - ```nodate = true``` Hides the date on a page
@@ -107,7 +107,7 @@ by explicitly setting variables. They are as follows:
 
 ### Other Params
 
- Aside from the above variables that hide/show things, there are a few other variables that this theme will look for and use. These can be placed in any front matter. In some cases 
+ Aside from the above variables that hide/show things, there are a few other variables that this theme will look for and use. These can be placed in any front matter. In some cases
  you'll want to define these in the archetypes so you don't need to keep defining the values. These are all optional of course.
 
  - ```ogimage``` OpenGraph image tag
