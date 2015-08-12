@@ -116,8 +116,8 @@ h2.brand-tagline {
     padding-bottom: 1rem;
 }
 .nav-item {
-    display: inline-block;
-    *display: inline;
+/*    display: inline-block;
+    *display: inline;*/
     zoom: 1;
 }
 .nav-item a {
